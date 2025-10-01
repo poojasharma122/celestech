@@ -16,7 +16,7 @@
 <body>
     <!-- Header Section Start -->
     <!-- Bootstrap Header -->
-    <header class="sticky-top ">
+    <header class="sticky-header">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <div class="row w-100 align-items-center">
@@ -518,7 +518,8 @@
 
                     <!-- Left Column -->
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="who-content">
+                        <div class="who-content" data-aos="fade-left" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
                             <h2 class="section-title">Who We Are</h2>
                             <p class="section-description">
                                 At Celestech, we are driven by a passion for science, safety, and innovation. With roots
@@ -856,8 +857,7 @@
 
 
         <section class="contact-section overflow-class">
-            <div class="form-div" data-aos="fade-up"
-            data-aos-duration="2000">
+            <div class="form-div" data-aos="fade-up" data-aos-duration="2000">
                 <form>
                     <h2>Get In Touch</h2>
                     <div class="subheading">Do you want to know more about our products or collaborate with us?</div>
@@ -1017,9 +1017,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
         AOS.init();
     </script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/jquery.js"></script>
 
 </body>
 

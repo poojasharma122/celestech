@@ -230,6 +230,7 @@ img {
 
 /* Header CSS Start */
 /* ===== Sticky Header ===== */
+/* default sticky header */
 .sticky-header {
     position: fixed;
     top: 0;
@@ -238,13 +239,14 @@ img {
     width: 100%;
     z-index: 9999;
     transition: all 0.3s ease-in-out;
-    padding: 1.875rem 0px 0.625rem 0;
 }
 
+/* when scrolled */
 .sticky-header.fixed_header {
     background-color: #10130f;
-    padding: 0.625em 0;
+    /* padding: 0.625em 0; */
 }
+
 
 /* ===== Navigation Bar ===== */
 .navigation-bar,
