@@ -653,11 +653,11 @@
 
     }
     .solution-title {
-        font-size: 16px;
-      
+        font-size: 18px;
     }
     .solution-text {
         font-size: 14px;
+        margin-top: 30px;
     }
     .btn-read {
         
@@ -668,7 +668,7 @@
         gap: 0px;
     }
     .section-title {
-        font-size: 16px;
+        font-size: 18px;
     }
     .history-section-content {
         margin-left: 10px;
