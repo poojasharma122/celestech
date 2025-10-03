@@ -2421,7 +2421,9 @@ textarea.form-control {
 .light-mode .tab-pane p {
     color: white;
 }
-
+.light-mode .form-div {
+    border: 1px solid rgb(215 214 214 / 45%);
+}
 
 
 
