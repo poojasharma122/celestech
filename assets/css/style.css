@@ -423,93 +423,101 @@ body {
 
 
 
-/* Banner CSS Start */
 .banner {
     height: 100vh;
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    background-image: url('../images/header-banner.png');
-    /* your uploaded background */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    /* border-radius: 1.875rem; */
-    color: #fff;
+    background: radial-gradient(circle at bottom left, #000010, #000);
     padding-left: 3rem;
 }
 
-.banner::before {
-    content: "";
+/* === Particles Background === */
+#particles-js {
     position: absolute;
     inset: 0;
-    /* background: rgba(0, 0, 0, 0.6); */
-    border-radius: 1.875rem;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
 }
 
+#particles-js>canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
+/* === Planets === */
+.planet {
+    position: absolute;
+    z-index: 1;
+    transform-origin: center;
+    will-change: transform;
+    pointer-events: none;
+}
+
+.big-planet {
+    width: 750px;
+    right: 6%;
+    top: 10%;
+    animation: rotatePlanet 60s linear infinite;
+}
+
+.small-planet {
+    width: 230px;
+    left: 5%;
+    bottom: 8%;
+}
+
+@keyframes rotatePlanet {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* === Banner Content === */
 .banner_wrap {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .banner_content h1 {
-    font-size: 109px;
+    font-size: 100px;
     line-height: 1.2;
     font-weight: 700;
-    /* max-width: 800px; */
+    color: white;
 }
 
 .manufacturer {
-    margin-left: 110px;
+    margin-left: 3rem;
+    color: #fff;
 }
 
 .banner_content .banner_heading {
-    position: relative;
-    font-size: 26px;
+    font-size: 1.6rem;
     font-weight: bold;
-    /* margin-bottom: 1rem; */
-    display: flex;
-    align-items: center;
-    gap: 65px;
     margin-top: 0;
-}
-
-.banner_content .heading_line {
-    display: block;
-    width: 547px;
-    height: 2px;
-
-    /* margin-top: 0.5rem; */
-}
-
-.banner_content p {
-    font-size: 16px;
-    margin-top: 1rem;
-    line-height: 1.6;
+    color: white;
 }
 
 .banner_content_p {
-    border-top: 3px solid #D9D9D9;
-    /* padding-top: 1rem; */
+    border-top: 3px solid #d9d9d9;
     margin-top: 25px;
+    color: white;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .banner_content h1 {
-        font-size: 2rem;
-    }
-
-    .banner_content p {
-        font-size: 1rem;
-    }
+.banner_content p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+    color: white;
 }
-
-/* Home Banner CSS End */
-
-
-
-
 
 
 
@@ -834,7 +842,7 @@ body {
 .timeline-link:hover {
     color: #AF4621;
     font-weight: bold;
-} 
+}
 
 .timeline .year-icon {
     margin-left: 10px;
@@ -856,13 +864,13 @@ body {
 .timeline li.active .timeline-link {
     color: #AF4621;
     font-weight: bold;
-  }
-  
-  .timeline li.active .year-icon {
+}
+
+.timeline li.active .year-icon {
     color: #AF4621;
     transform: rotate(-45deg);
-  }
-  
+}
+
 /* =======================
    Right Column & Overlay
    ======================= */
@@ -2421,6 +2429,7 @@ textarea.form-control {
 .light-mode .tab-pane p {
     color: white;
 }
+
 .light-mode .form-div {
     border: 1px solid rgb(215 214 214 / 45%);
 }

@@ -37,6 +37,12 @@
         height: 140px;
 
     }
+    .big-planet {
+        width: 600px;
+        right: 0%;
+        top: 15%;
+        animation: rotatePlanet 60s linear infinite;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -147,11 +153,30 @@
 
         font-size: 22px;
     }
+    .big-planet {
+        width: 570px;
+        right: -3%;
+        top: 15%;
+        animation: rotatePlanet 60s linear infinite;
+    }
 
 
 }
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .big-planet {
+        width: 530px;
+        right: -3%;
+        top: 15%;
+        animation: rotatePlanet 60s linear infinite;
+    }
+    .small-planet {
+        width: 230px;
+        left: -1%;
+        bottom: 8%;
+    }
+    
+}
 
 @media screen and (max-width: 991px) {
     .navbar-collapse {
@@ -196,11 +221,11 @@
     }
 
     .banner_content h1 {
-        font-size: 42px;
+        font-size: 60px;
     }
 
     .banner_content .banner_heading {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .banner_content p {
@@ -239,114 +264,149 @@
     .about-section {
         padding: 40px 20px;
     }
+
     .solution-btn-read {
-      
+
         padding: 15px 40px;
-        
+
         font-size: 16px;
-        
+
     }
+
     .solutions-subtitle {
         font-size: 18px;
-        
+
     }
+
     .solution-icon img {
         max-width: 70px;
         margin-bottom: 25px;
     }
+
     .solution-text {
-        
-       
-       
+
+
+
         min-height: 140px;
     }
+
     .history-section-content {
         margin-left: 50px;
         width: 100%;
         max-width: 910px;
         margin-right: 50px;
     }
+
     .history-section .overlay-box {
         bottom: -70px;
         left: 0;
         right: 0;
     }
+
     .target-card-title {
         font-size: 18px;
-        
+
     }
+
     .target-icon {
         width: 40px;
         height: 41px;
         object-fit: contain;
     }
+
     .who-we-are-section .who-content {
         margin-right: 40px;
         margin-left: 40px;
     }
+
     .history-section .overlay-box {
         bottom: 10px;
         left: 20px;
         right: 0;
     }
+
     .who-we-are-section .left-image {
-        
+
         max-height: 525px;
-        
+
     }
+
     .what-we-do-section h1 {
         font-size: 36px;
     }
+
     .what-we-do-subtitle {
         font-size: 20px;
     }
+
     .what-we-do-section {
-       
+
         padding: 30px 20px;
-       
+
     }
+
     .nav-tabs .nav-link {
         font-size: 18px;
     }
+
     .nav-tabs .nav-link.active {
-       
+
         font-size: 18px;
-        
+
     }
+
     .what-we-do-section .nav li {
         margin-bottom: 0;
         width: 190px;
     }
+
     .product-title {
         font-size: 20px;
     }
+
     .how-we-do-title {
         font-size: 36px;
     }
+
     .how-we-do-subtitle {
         font-size: 19px;
     }
+
     .feature-title {
         font-size: 18px;
     }
+
     .why-section h2 {
         font-size: 36px;
         margin-bottom: 55px;
     }
+
     .why-section {
-      
+
         padding: 50px 15px 220px;
-      
+
     }
+
     .card3 {
         margin-top: 90px;
     }
+
     .contact-text strong {
         font-size: 20px;
     }
+
     .contact-text {
         font-size: 16px;
         margin-top: 10px;
+    }
+
+
+
+    .big-planet {
+        width: 500px;
+        right: -3%;
+        top: 7%;
+        animation: rotatePlanet 60s linear infinite;
     }
 }
 
@@ -365,24 +425,30 @@
 
         max-width: 120px;
     }
+
     .banner {
-        
+
         padding-left: 0;
     }
+
     .about-company {
         font-size: 42px;
     }
+
     .about-title {
         font-size: 25px;
     }
+
     .about-text {
         font-size: 16px;
         letter-spacing: 0.3px;
     }
+
     .solutions-section {
         padding: 10px 20px;
         text-align: center;
     }
+
     .solutions-subtitle {
         font-size: 16px;
         max-width: 570px;
@@ -390,77 +456,112 @@
         line-height: 1.3;
         padding-bottom: 40px;
     }
+
     .solution-btn-read {
         padding: 12px 30px;
         font-size: 14px;
     }
+
     .solution-text {
         min-height: 150px;
     }
+
     .history-section-content {
         margin-left: 25px;
         width: 100%;
         max-width: 575px;
         margin-right: 50px;
     }
+
     .section-title {
         font-size: 28px;
     }
+
     .what-we-do-section h1 {
         font-size: 28px;
     }
+
     .what-we-do-subtitle {
         font-size: 18px;
     }
+
     .nav-tabs .nav-link.active {
         font-size: 16px;
     }
+
     .what-we-do-section .nav li {
         margin-bottom: 0;
         width: 170px;
     }
+
     .how-we-do-title {
         font-size: 28px;
     }
+
     .how-we-do-section {
-      
+
         padding: 50px 20px;
-        
+
     }
+
     .why-section h2 {
         font-size: 28px;
         margin-bottom: 45px;
     }
+
     .why-section {
         padding: 50px 15px 100px;
     }
+
     .footer-section h6 {
         font-size: 18px;
-       
+
     }
+
     .footer-section {
-       
+
         padding: 70px 0 120px;
-       
+
     }
+
     .contact-section h2 {
-        
+
         font-size: 28px;
-        
+
     }
+
     .about-img {
-       
+
         max-height: 479px;
-        
+
         object-position: center;
     }
-    .brand-container a, .footer-section .logo a, .navbar-brand img {
-      
+
+    .brand-container a,
+    .footer-section .logo a,
+    .navbar-brand img {
+
         height: 50px;
-       
+
     }
+
     button.navbar-toggler.collapsed {
         padding: 0;
+    }
+
+
+
+    .banner_content h1 {
+        font-size: 48px;
+    }
+    .banner_content .banner_heading {
+        font-size: 20px;
+    }
+    .big-planet {
+        width: 430px;
+        right: -6%;
+        top: 9%;
+        animation: rotatePlanet 60s linear infinite;
     }
 }
 
@@ -468,127 +569,161 @@
     .banner {
         height: 70vh;
     }
+
     .banner_content h1 {
         font-size: 32px;
     }
+
     .banner_content>div {
         padding-top: 25px !important;
     }
+
     .about-img {
         max-height: 290px;
         object-position: center;
     }
+
     .solution-title {
         font-size: 18px;
         height: 30px;
         max-width: 350px;
     }
+
     .solution-text {
         font-size: 16px;
-      
+
     }
+
     .solution-text {
         min-height: 100px;
         margin-top: 0;
-        
+
     }
+
     .solution-icon img {
         max-width: 50px;
-      
+
     }
+
     .about-title {
         font-size: 22px;
     }
+
     .about-company {
         font-size: 38px;
     }
+
     .about-inner-content {
         padding-left: 0px;
     }
+
     .section-title {
         font-size: 25px;
     }
+
     .target-title {
         font-size: 25px;
     }
+
     .target-card {
-        
+
         gap: 0px;
     }
+
     .what-we-do-section h1 {
         font-size: 25px;
         margin-bottom: 15px;
     }
+
     .what-we-do-subtitle {
         font-size: 16px;
         line-height: 1.2;
     }
+
     .product-title {
         font-size: 18px;
     }
+
     .tab-content-wrapper {
-       
+
         padding: 40px 20px 20px;
-      
+
     }
+
     .how-we-do-title {
         font-size: 25px;
         margin-bottom: 15px;
     }
+
     .how-we-do-subtitle {
         font-size: 16px;
         margin: 0 auto 35px;
     }
+
     .feature-title {
         font-size: 16px;
     }
+
     .why-section {
         padding: 35px 15px 80px;
     }
+
     .who-we-are-section .overlay-box p {
         font-size: 13px;
     }
+
     .contact-item {
-       
+
         flex: 1 1 80px;
     }
+
     .contact-icon {
-       
+
         max-height: 45px;
-       
+
         max-width: 45px;
     }
+
     .contact-text {
         font-size: 16px;
         margin-top: 0;
     }
+
     .form-div {
-       
+
         margin-bottom: 60px;
     }
+
     .contact-section {
         padding: 40px 15px 40px;
     }
+
     .footer-section .ft-about p {
-       
+
         margin-top: 22px;
         margin-bottom: 50px;
-        
+
     }
+
     .footer-section h6 {
         font-size: 16.5px;
     }
-    .ft-newslatter ul li a, .ft-contact ul li a {
-       
+
+    .ft-newslatter ul li a,
+    .ft-contact ul li a {
+
         font-size: 16px;
-       
+
     }
+
     .nav-tabs .nav-link.active {
         font-size: 14.5px;
     }
+
     .nav-tabs .nav-link {
         font-size: 14.5px;
     }
+
     .history-section .overlay-box {
         position: relative;
         right: 0;
@@ -599,6 +734,7 @@
         padding-bottom: 0 !important;
 
     }
+
     .who-we-are-section .overlay-box {
         position: absolute;
         bottom: 10px;
@@ -606,259 +742,336 @@
         right: 0;
         top: 50%;
     }
+
     .navbar-toggler {
         padding: 0;
+    }
+    .big-planet {
+        width: 370px;
+        right: -25%;
+        top: 10%;
+        animation: rotatePlanet 60s linear infinite;
+    }
+    .small-planet {
+        width: 190px;
+        left: -1%;
+        bottom: -5%;
+    }
+    .banner_content h1 {
+        font-size: 38px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .banner_content h1 {
         font-size: 23px;
-        margin-top: 20px;
     }
+
     .banner_content .banner_heading {
         font-size: 16px;
     }
+
     .banner_content p {
         font-size: 14px;
         margin-top: 10px;
     }
+
     .banner {
-        height: 65vh;
+        height: 60vh;
     }
+
     .about-section {
         padding: 10px 0px;
     }
+
     .about-title {
         font-size: 16px;
     }
+
     .about-company {
         font-size: 25px;
     }
+
     .about-text {
         font-size: 14px;
         letter-spacing: 0.3px;
     }
+
     .solution-btn-read {
         padding: 8px 20px;
         font-size: 13px;
     }
+
     .solutions-subtitle {
         font-size: 14px;
-       
+
     }
+
     .solutions-section {
         padding: 10px 0px;
         line-height: 1.5;
 
     }
+
     .solution-title {
         font-size: 18px;
     }
+
     .solution-text {
         font-size: 14px;
         margin-top: 30px;
     }
+
     .btn-read {
-        
+
         padding: 8px 10px 8px 10px;
-       
+
         font-size: 14px;
-        
+
         gap: 0px;
     }
+
     .section-title {
         font-size: 18px;
     }
+
     .history-section-content {
         margin-left: 10px;
         max-width: 325px;
     }
+
     .section-description {
         font-size: 14px;
-      
+
     }
+
     .timeline-link {
-       
+
         font-size: 13px;
-      
+
         letter-spacing: 1.3px;
     }
+
     .target-title {
         font-size: 18px;
     }
+
     .target-audience {
         padding-top: 0px !important;
     }
+
     .target-card-title {
         font-size: 16px;
     }
+
     .target-icon {
         width: 35px;
         height: 35px;
-        
+
     }
+
     .solution-icon img {
         max-width: 45px;
     }
+
     .who-we-are-section .who-content {
         margin-right: 20px;
         margin-left: 20px;
     }
+
     .target-audience {
         padding-top: 0px !important;
     }
+
     .exploreus i {
-       
+
         font-size: 18px !important;
-        
+
     }
+
     .who-we-are-section .overlay-box {
-      
+
         width: 120px;
         height: 120px;
     }
+
     .what-we-do-section h1 {
         font-size: 18px;
-        
+
     }
+
     .what-we-do-subtitle {
         font-size: 14px;
-        
+
     }
+
     .what-we-do-section {
         padding: 0px 0px 40px;
     }
+
     .product-description {
         font-size: 14px;
     }
+
     .product-title {
         font-size: 16px;
     }
+
     .tab-content-wrapper {
         padding: 30px 15px 10px;
     }
+
     .how-we-do-title {
         font-size: 20px;
-       
+
     }
+
     .how-we-do-subtitle {
         font-size: 14px;
-       
+
     }
+
     .how-we-do-section {
         padding: 50px 0px;
     }
+
     .why-section h2 {
         font-size: 18px;
         margin-bottom: 25px;
     }
+
     .card-body-custom h5 {
         font-size: 17px;
     }
+
     .card-body-custom p {
         font-size: 14px;
-        
+
     }
+
     .read-more {
-        
+
         font-size: 14px;
-        
+
     }
+
     .why-section {
         padding: 35px 0px 10px;
     }
+
     .contact-section h2 {
         font-size: 18px;
     }
+
     .contact-section .subheading {
-      
+
         font-size: 14px;
-     
+
     }
+
     .btn-send {
-       
+
         padding: 10px 25px;
-       
+
         font-size: 14px;
-       
+
     }
+
     .btn-send span::before {
         top: -10px;
         right: -26px;
         border-right-width: 1px;
         border-top-width: 1px;
     }
+
     .btn-send span::after {
         bottom: -10px;
         left: -25px;
         border-left-width: 1px;
         border-bottom-width: 1px;
     }
+
     .contact-section i::before {
         font-size: 18px;
     }
+
     .contact-icon {
         max-height: 35px;
         max-width: 35px;
     }
+
     .contact-text strong {
         font-size: 17px;
     }
+
     .contact-text {
         font-size: 14px;
         margin-top: 0;
     }
+
     .contact-item {
         flex: 1 1 50px;
     }
-    .brand-container a, .footer-section .logo a, .navbar-brand img {
-       
+
+    .brand-container a,
+    .footer-section .logo a,
+    .navbar-brand img {
+
         height: 55px;
         width: 130px;
-       
+
     }
+
     .footer-section .ft-about p {
         font-size: 14px;
         margin-top: 8px;
         margin-bottom: 40px;
     }
+
     .fa-social img {
         width: 100%;
         max-width: 15px;
         height: 100%;
         max-height: 15px;
     }
+
     .fa-social a {
         height: 30px;
         width: 30px;
-      
+
     }
+
     .footer-section h6 {
         font-size: 16px;
         margin-bottom: 15px;
     }
-    .ft-newslatter ul li a, .ft-contact ul li a {
+
+    .ft-newslatter ul li a,
+    .ft-contact ul li a {
         font-size: 14px;
     }
+
     .footer-section .ft-contact ul li {
         font-size: 14px;
-       
+
     }
+
     .fn-form input {
         height: 40px;
         font-size: 14px;
         max-width: 180px;
     }
+
     .fn-form button {
-      
+
         font-size: 14px;
-       
+
     }
+
     .footer-section {
         padding: 20px 0 60px;
     }
-    
+
     .history-section .overlay-box {
         position: relative;
         right: 0;
@@ -869,6 +1082,7 @@
         padding-bottom: 0 !important;
 
     }
+
     .who-we-are-section .overlay-box {
         position: absolute;
         bottom: 10px;
@@ -876,17 +1090,52 @@
         right: 0;
         top: 50%;
     }
+
     .overlay-box h5 {
         font-size: 16px;
         margin-bottom: 10px;
     }
+
     .manufacturer {
         margin-left: 50px;
     }
+
     .navbar-toggler-icon {
-        
+
         width: 25px;
         height: 25px;
-       
+
+    }
+
+
+    .big-planet {
+        width: 270px;
+        right: -21%;
+        top: 10%;
+        animation: rotatePlanet 60s linear infinite;
+    }
+    .small-planet {
+        width: 150px;
+        left: -7%;
+        bottom: -5%;
+    }
+    .banner_content>div {
+        padding-top: 30px !important;
+    }
+    .banner_content p {
+        font-size: 14px;
+        margin-top: 10px;
+        padding-top: 0 !important;
+    }
+    .banner_content_p {
+        border-top: 3px solid #d9d9d9;
+        margin-top: 10px;
+        color: white;
+    }
+    .manufacturer {
+        margin-left: 0;
+    }
+    .banner_content h1 {
+        font-size: 28px;
     }
 }

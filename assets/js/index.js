@@ -65,3 +65,61 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof particlesJS === "undefined") {
+    console.error("particles.js not loaded!");
+    return;
+  }
+
+  particlesJS("particles-js", {
+    particles: {
+      number: {
+        value: 120,
+        density: { enable: true, value_area: 800 },
+      },
+      color: { value: "#ffffff" },
+      shape: { type: "circle" },
+      opacity: {
+        value: 0.8,
+        random: true,
+        anim: { enable: true, speed: 0.8, opacity_min: 0.3 },
+      },
+      size: { value: 2, random: true },
+      line_linked: { enable: false },
+      move: {
+        enable: true,
+        speed: 0.3,
+        direction: "none",
+        random: true,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+      },
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: false },
+        onclick: { enable: false },
+        resize: true,
+      },
+    },
+    retina_detect: true,
+  });
+});
