@@ -123,3 +123,66 @@ document.addEventListener("DOMContentLoaded", function () {
     retina_detect: true,
   });
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const canvas = document.querySelector(".streak-canvas");
+  const ctx = canvas.getContext("2d");
+
+  const arcs = [];
+  const arcCount = 30;
+
+  function resizeCanvas() {
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = canvas.clientWidth * dpr;
+    canvas.height = canvas.clientHeight * dpr;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.scale(dpr, dpr);
+  }
+
+  window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
+
+  // Initialize arcs
+  for (let i = 0; i < arcCount; i++) {
+    arcs.push({
+      radius: 30 + i * 15,
+      angleStart: -0.2 * Math.PI,
+      angleEnd: 0.8 * Math.PI,
+      speed: 0.3 + Math.random() * 0.5,
+      drift: Math.random() * 20
+    });
+  }
+
+  function drawArcs() {
+    const width = canvas.clientWidth;
+    const height = canvas.clientHeight;
+
+    ctx.clearRect(0, 0, width, height);
+    ctx.lineWidth = 1.2;
+    ctx.strokeStyle = "rgba(255,255,255,0.15)";
+    ctx.lineCap = "round";
+
+    arcs.forEach(arc => {
+      ctx.beginPath();
+      ctx.arc(0, height, arc.radius + arc.drift, arc.angleStart, arc.angleEnd);
+      ctx.stroke();
+
+      // Move arcs outward
+      arc.radius += arc.speed;
+      // Reset radius when it gets too large
+      if (arc.radius > width + height) {
+        arc.radius = 30 + Math.random() * 50;
+        arc.drift = Math.random() * 20;
+      }
+    });
+
+    requestAnimationFrame(drawArcs);
+  }
+
+  drawArcs();
+});
+

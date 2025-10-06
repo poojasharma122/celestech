@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>who we are</title>
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <!-- Bootstrap Header -->
+    <header class="sticky-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex align-items-center justify-content-between">
+
+                <!-- Brand / Logo -->
+                <div class="brand-container">
+                    <a href="./" class="brand-link"></a>
+                </div>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu + Language + Theme -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+
+                    <!-- Menu -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="./aboutUs.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./ourHistory.html">Our History</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./solutions.html">Solutions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactUs.html">Contact Us</a></li>
+                    </ul>
+
+                    <!-- Right Side -->
+                    <div class="d-flex align-items-center gap-4 mt-3 mt-lg-0">
+                        <!-- Language Dropdown -->
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light dropdown-toggle d-flex align-items-center"
+                                type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://flagcdn.com/w20/us.png" class="me-2"> English
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#" data-lang="es">
+                                        <img src="https://flagcdn.com/w20/es.png" class="me-2"> Spanish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#" data-lang="en">
+                                        <img src="https://flagcdn.com/w20/us.png" class="me-2"> English
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Dark Mode Toggle -->
+                        <div class="form-check form-switch m-0">
+                            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <!-- Header Section End -->
+
+
+
+
+    <main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Banner Start -->
+        <!-- <section class="banner home_banner overflow-class">
+            <div class="container">
+                <div class="banner_wrap">
+                    <div class="banner_content">
+                        <h1 data-aos="zoom-in">
+                            Solar eclipse glasses<br>
+                            <span class="manufacturer"> manufacturer in Spain</span>
+                        </h1>
+                        <div class="row align-items-start pt-5">
+                            <p class="banner_heading col-12 col-sm-5 col-md-5 col-lg-4" data-aos="fade-up">
+                                <strong>SO certified, Made in Barcelona</strong>
+
+                            </p>
+                            <div class="col-12 col-sm-7 col-md-6 col-lg-5">
+                                <div class=" banner_content_p" data-aos="fade-left">
+                                    <p class="pt-3">
+                                        With a production capacity of 350,000 glasses per day, Celestech provides SAFE
+                                        solar
+                                        vision
+                                        for millions.
+                                    </p>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum
+                                        has
+                                        been the industry's standard dummy text ever since the 1500s, when an unknown
+                                        printer
+                                        took a
+                                        galley of type and scrambled it to make a type specimen book. It has survived
+                                        not only
+                                        five
+                                        centuries.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Banner End -->
+
+
+
+        <!-- ======= Banner Section ======= -->
+        <section class="who-we-are-banner banner home_banner overflow-class">
+            <!-- Streak Canvas -->
+            <canvas class="streak-canvas"></canvas>
+
+            <!-- Planets -->
+            <img src="./assets/images/banner-img.png" alt="Big Planet" class="planet big-planet" />
+            <img src="./assets/images/small-planet.png" alt="Small Planet" class="planet small-planet" />
+
+            <!-- Banner Content -->
+            <div class="container">
+                <div class="banner_wrap">
+                    <div class="banner_content">
+                        <h1 data-aos="zoom-in">Who We Are</h1>
+                        <div class="banner_content_p" data-aos="fade-left">
+                            <p class="pt-3">
+                                At Celestech, we are dedicated to crafting certified solar eclipse glasses in
+                                <span class="theme">Spain</span>. With a passion for astronomy and a commitment to
+                                safety, we empower
+                                skywatchers worldwide to experience every celestial moment with clarity and protection.
+                            </p>
+                            <p>
+                                Every pair of our glasses is manufactured under the strictest European quality
+                                standards and tested in our laboratories using precision spectrophotometers to
+                                ensure full ISO &amp; CE compliance. We incorporate safety seals and holograms on
+                                each product to guarantee authenticity, giving our customers peace of mind
+                                during every solar event.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="about-section overflow-class who-we-are-after-banner">
+            <div class="container ">
+                <div class="row align-items-center" data-aos="fade-up" data-aos-duration="2000">
+                    <!-- Image Column -->
+                    <div class="col-md-6 col-lg-6 mb-4 mb-lg-0 img-div">
+                        <img src="./assets/images/glasses.png" alt="About Company" class="about-img">
+                    </div>
+                    <!-- Text Column -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="about-inner-content">
+
+                            <h2 class="about-company">OUR MISSION</h2>
+                            <p class="about-text">
+                                Celestech arises in Spain as the natural evolution of a consolidated experience in the
+                                manufacture of solar eclipse glasses and safe observation products in North America. For
+                                years, our team has collaborated with internationally renowned astronomical institutions
+                                and has supplied millions of certified glasses, recognized for meeting the most
+                                demanding safety standards.
+
+
+                            </p>
+                            <p class="about-text">
+                                The next total eclipse in 2026 will be a historic event, partially or totally visible to
+                                millions of people on the continent. Faced with this challenge, our commitment is to
+                                become the largest European manufacturer of solar eclipse glasses, with a daily
+                                production capacity of up to 350,000 units, so that everyone can enjoy this phenomenon
+                                in a safe and certified way.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="history-section py-5 overflow-class who-we-are-history">
+            <div class="History-main">
+                <div class="row g-4">
+
+                    <!-- Left Column -->
+                    <div class="col-lg-1 col-12"></div>
+                    <div class="col-lg-3 col-12 history-section-content">
+                        <h2 class="section-title">OUR HISTORY</h2>
+                        <p class="section-description">
+                            Celestech arises in Spain as the natural evolution of a consolidated experience in the
+                            manufacture of solar eclipse glasses and safe observation products in North America. For
+                            years, our team has collaborated with internationally
+                        </p>
+
+                        <!-- Timeline -->
+                        <ul class="timeline list-unstyled">
+                            <li class="active">
+                                <a href="#" class="timeline-link inline-block-custom"
+                                    data-title="2015 The Beginning Of A Vision"
+                                    data-description="<p>Founded with a vision for safe eclipse viewing, Celestech began its journey with a commitment to protecting eyes during solar events. Our small team of astronomy enthusiasts and optical engineers set out to create the safest solar viewing products available.</p><p>In our first year, we developed proprietary lens technology that exceeded international safety standards while maintaining exceptional visual clarity.</p>"
+                                    data-image="./assets/images/DeWatermark.png">
+                                    <span class="year-icon inline-block-custom"><i class="bi bi-arrow-right"></i></span>
+                                    <span class="year inline-block-custom">2015</span> Foundation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="timeline-link inline-block-custom"
+                                    data-title="2016 Expansion Into New Markets"
+                                    data-description="<p>In 2016, Celestech expanded its reach by partnering with major observatories and educational institutions. This allowed us to bring solar safety technology to classrooms and science centers worldwide.</p>"
+                                    data-image="./assets/images/night.jpg">
+                                    <span class="year-icon inline-block-custom"><i class="bi bi-arrow-right"></i></span>
+                                    <span class="year inline-block-custom">2016</span> Foundation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="timeline-link inline-block-custom"
+                                    data-title="2017 New Technology Breakthrough"
+                                    data-description="<p>Celestech introduced advanced nanocoating technology that improved solar filter durability and clarity. This innovation set new industry standards.</p>"
+                                    data-image="./assets/images/rain.jpg">
+                                    <span class="year-icon inline-block-custom"><i class="bi bi-arrow-right"></i></span>
+                                    <span class="year inline-block-custom">2017</span> Foundation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="timeline-link inline-block-custom"
+                                    data-title="2018 Global Reach Achieved"
+                                    data-description="<p>By 2018, Celestech had established partnerships across five continents, ensuring millions could view solar eclipses safely.</p>"
+                                    data-image="./assets/images/winter.jpg">
+                                    <span class="year-icon inline-block-custom"><i class="bi bi-arrow-right"></i></span>
+                                    <span class="year inline-block-custom">2018</span> Foundation
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-lg-8 col-12">
+                        <div class="position-relative">
+                            <!-- Background image -->
+                            <img src="./assets/images/DeWatermark2.png" class="img-fluid w-100 DeWatermark-img"
+                                alt="History Image" />
+
+                            <!-- Overlay content -->
+                            <div class="overlay-box p-4 text-white" data-aos="fade-left">
+
+                                <p>
+                                    With this background, we decided to transfer this experience to Europe, creating a
+                                    state-of-the-art production plant in L'Hospitalet de Llobregat (Barcelona).
+
+
+
+
+
+                                </p>
+                                <p>
+                                    Our facility combines state-of-the-art technology with strict internal quality
+                                    controls, allowing us to offer a product manufactured in Europe and fully compliant
+                                    with ISO and CE standards.
+
+                                </p>
+                                <p>
+                                    The result is a firm commitment: to protect the eyesight of people across the
+                                    continent and ensure that every sun observation is experienced with safety and
+                                    confidence.
+                                </p>
+                                <p>
+                                    renowned astronomical institutions and has supplied millions of certified glasses,
+                                    recognized for meeting the most demanding safety standards.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="how-we-do-section overflow-class who-we-are-why-euro">
+            <div class="container">
+                <h2 class="how-we-do-title">WHY EUROPEAN PRODUCTION?
+                </h2>
+                <p class="how-we-do-subtitle">
+                    Ensuring safety, authenticity, and peace of mind for your eyes.
+                </p>
+
+                <div class="row g-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="feature-card ">
+                            <div class="feature-icon">
+                                <img src="./assets/images/cogwheel.png" alt="Machinery Icon" />
+                            </div>
+                            <div class="feature-title">Trusted European Safety for Your Eyes</div>
+                            <div class="feature-description">
+                                Eyesight is not at risk. In previous eclipses, the international market was flooded with
+                                counterfeit and dangerous products that did not meet safety standards. At Celestech we
+                                believe that the only way to guarantee peace of mind is to manufacture in Europe, under
+                                the strictest quality and safety requirements.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="feature-card ">
+                            <div class="feature-icon">
+                                <img src="./assets/images/new-product.png" alt="Packaging Icon" />
+                            </div>
+                            <div class="feature-title">Laboratory-Tested, ISO & CE Certified</div>
+                            <div class="feature-description">
+                                Each batch of solar filtering films is tested in our laboratory with precision
+                                spectrophotometers, verifying compliance with ISO and CE standards. In addition, our
+                                glasses incorporate safety seals and holograms that certify their authenticity and allow
+                                consumers to immediately recognize a reliable product.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="feature-card ">
+                            <div class="feature-icon">
+                                <img src="./assets/images/fulfillment.png" alt="Fulfillment Icon" />
+                            </div>
+                            <div class="feature-title">Vision Protection Guaranteed</div>
+                            <div class="feature-description">
+                                With Celestech, you can rest assured that your eyes are fully protected during solar
+                                events. Our glasses are crafted with precision, tested for ISO & CE compliance, and
+                                include safety seals and holograms to guarantee authenticity. Unlike unsafe or
+                                counterfeit products, Celestech eyewear ensures you can enjoy every eclipse safely, your
+                                vision.
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="contact-section overflow-class">
+            <div class="form-div" data-aos="fade-up" data-aos-duration="2000">
+                <form>
+                    <h2>Get In Touch</h2>
+                    <div class="subheading">Do you want to know more about our products or collaborate with us?</div>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Name*</label>
+                            <input type="text" id="name" class="form-control" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">E-mail*</label>
+                            <input type="email" id="email" class="form-control" required />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-control" />
+                    </div>
+                    <div class="mb-4 mt-4">
+                        <label for="message" class="form-label">Text</label>
+                        <textarea id="message" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-send"><span>Send Mail</span></button>
+                </form>
+            </div>
+
+            <div class="wave-bg"></div>
+
+            <div class="contact-info" data-aos="zoom-in-up">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="bi bi-globe"></i></div>
+                    <div class="contact-text">
+                        <strong>Location</strong><br />
+                        Carrer del Cobalt, 102<br />
+                        08907 L'Hospitalet de Llobregat<br />
+                        Barcelona, Spain
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="bi bi-phone"></i></div>
+                    <div class="contact-text">
+                        <strong>Phone No</strong><br />
+                        +34 900 49 90 90 88
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                    <div class="contact-text">
+                        <strong>Email</strong><br />
+                        info@celestech.com
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-text row">
+
+                <!-- Logo + About -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="ft-about">
+                        <div class="logo">
+                            <a href="#"></a>
+                        </div>
+                        <p>
+                            With a production capacity of 350,000 glasses per day, Celestech provides SAFE solar vision
+                            for millions.
+                        </p>
+                        <div class="fa-social mt-3">
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./assets/images/fb.png"
+                                    alt=""></a>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="./assets/images/insta.png"
+                                    alt=""></a>
+                            <a href="https://x.com/" target="_blank"><img src="./assets/images/twit.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="ft-newslatter">
+                        <h6>Quick Links</h6>
+                        <ul>
+                            <li><a href="./">Home</a></li>
+                            <li><a href="./aboutUs.html">About</a></li>
+                            <li><a href="./blog">Blog</a></li>
+                            <li><a href="./contactUs.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="ft-newslatter">
+                        <h6>Customer Support</h6>
+                        <ul>
+                            <li><a href="./faq">FAQ</a></li>
+                            <li><a href="./info">Info</a></li>
+                            <li><a href="./privacy">Privacy</a></li>
+                            <li><a href="./policy">Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact + Subscribe -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="ft-contact">
+                        <h6>Contact Us</h6>
+                        <ul>
+                            <li><strong>Email:</strong> <a href="mailto:info@celestech.com">info@celestech.com</a></li>
+                            <li><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></li>
+                        </ul>
+                        <form class="fn-form mt-3">
+                            <input type="email" placeholder="Enter your email" required />
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Section End -->
+
+
+
+
+
+
+
+
+
+
+    <div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function translatePage(lang) {
+            var select = document.querySelector(".goog-te-combo");
+            if (select) {
+                select.value = lang;
+                select.dispatchEvent(new Event("change"));
+            }
+        }
+
+        // Example usage for your dropdown items
+        document.querySelectorAll(".dropdown-item").forEach(item => {
+            item.addEventListener("click", function (e) {
+                e.preventDefault();
+                if (this.textContent.includes("Spanish")) {
+                    translatePage("es");
+                } else if (this.textContent.includes("English")) {
+                    translatePage("en");
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+
+
+
+
+
+
+
+
+
+    <script>
+        const toggle = document.getElementById("darkModeToggle");
+
+        toggle.addEventListener("change", function () {
+            if (this.checked) {
+                document.documentElement.classList.add("light-mode");
+            } else {
+                document.documentElement.classList.remove("light-mode");
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js@2.0.0/particles.min.js"></script>
+
+
+
+</body>
+
+</html>

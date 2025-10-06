@@ -43,6 +43,32 @@
         top: 15%;
         animation: rotatePlanet 60s linear infinite;
     }
+    .who-we-are-banner .small-planet {
+        width: 230px;
+        left: 0%;
+        bottom: -5%;
+    }
+    .who-we-are-history .section-title {
+        font-size: 50px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .who-we-are-history  .position-relative {
+        padding-left: 0;
+    }
+    .who-we-are-history {
+        padding: 50px 0 50px !important;
+    }
+    .who-we-are-history .overlay-box {
+        bottom: -30px;
+        left: -28px;
+        right: 20px;
+    }
+    .who-we-are-history .section-title {
+        font-size: 45px;
+        
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -161,13 +187,50 @@
     }
 
 
+    .who-we-are-after-banner .about-img {
+       
+        max-width: 460px;
+       
+        max-height: 638px;
+       
+    }
+    .who-we-are-why-euro .feature-title {
+        font-size: 18px;
+        
+    }
+    .who-we-are-history {
+        padding: 60px 0 100px !important;
+    }
+    .who-we-are-history .section-title {
+        font-size: 42px;
+        
+    }
+    .who-we-are-history  .position-relative {
+        padding-left: 0;
+    }
+    .who-we-are-history .overlay-box {
+        bottom: -110px;
+        left: -130px;
+    }
+    .who-we-are-history .section-title {
+        font-size: 35px;
+    }
+    .who-we-are-history .overlay-box {
+        bottom: -230px;
+        left: -70px;
+        max-width: 100%;
+    }
+    .who-we-are-history {
+        padding: 60px 0 200px !important;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
     .big-planet {
         width: 530px;
-        right: -3%;
-        top: 15%;
+        right: -10%;
+        top: 4%;
         animation: rotatePlanet 60s linear infinite;
     }
     .small-planet {
@@ -175,6 +238,12 @@
         left: -1%;
         bottom: 8%;
     }
+    .who-we-are-after-banner .about-company {
+        font-size: 55px;
+       
+    }
+    
+    
     
 }
 
@@ -408,6 +477,38 @@
         top: 7%;
         animation: rotatePlanet 60s linear infinite;
     }
+    .who-we-are-after-banner .about-img {
+        max-width: 390px;
+        max-height: 638px;
+    }
+    .who-we-are-after-banner .about-company {
+        font-size: 45px;
+    }
+    .who-we-are-history  .position-relative {
+        padding-left: 0;
+    }
+    .who-we-are-history .section-description {
+        font-size: 15px;
+        
+        margin-bottom: 30px;
+        
+    }
+    .who-we-are-history {
+        padding: 40px 0 80px !important;
+    }
+    .who-we-are-history .overlay-box {
+       
+        max-width: 100%;
+    }
+    .who-we-are-history .overlay-box {
+        bottom: -120px;
+        left: 20px;
+        right: 0;
+    }
+    .who-we-are-history .section-title {
+        font-size: 28px;
+        
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -561,6 +662,58 @@
         width: 430px;
         right: -6%;
         top: 9%;
+        animation: rotatePlanet 60s linear infinite;
+    }
+
+
+
+    .who-we-are-banner {
+        height: 70vh;
+    }
+    .who-we-are-banner .banner_content>div {
+        padding-top: 0px !important;
+    }
+    .who-we-are-banner .banner_content p {
+        
+        padding-top: 0 !important;
+    }
+    .who-we-are-banner {
+        height: 65vh;
+    }
+    .img-div {
+        display: flex;
+        justify-content: center;
+    }
+    .who-we-are-after-banner .about-company {
+        font-size: 35px;
+    }
+    .who-we-are-history {
+        padding: 20px 0 200px !important;
+    }
+    .who-we-are-history .overlay-box {
+        bottom: -200px;
+        left: 0px;
+        right: 0;
+    }
+    .about-section {
+        padding: 40px 10px;
+    }
+    .who-we-are-after-banner .about-inner-content {
+        
+        max-width: 100%;
+    }
+    .who-we-are-history .section-title {
+        font-size: 30px;
+    }
+    .who-we-are-banner .small-planet {
+        width: 200px;
+        left: 0%;
+        bottom: -9%;
+    }
+    .big-planet {
+        width: 400px;
+        right: -9%;
+        top: 3%;
         animation: rotatePlanet 60s linear infinite;
     }
 }
@@ -759,6 +912,30 @@
     }
     .banner_content h1 {
         font-size: 38px;
+    }
+    .who-we-are-after-banner .about-img {
+        max-width: 350px;
+        max-height: 638px;
+    }
+    .who-we-are-after-banner {
+        padding: 70px 0px 30px;
+    }
+    .who-we-are-after-banner .about-company {
+        font-size: 30px;
+    }
+    .who-we-are-history {
+        padding: 20px 0 20px !important;
+    }
+    .who-we-are-banner .big-planet {
+        width: 370px;
+        right: -25%;
+        top: 5%;
+        animation: rotatePlanet 60s linear infinite;
+    }
+    .who-we-are-banner .small-planet {
+        width: 230px;
+        left: -10%;
+        bottom: -12%;
     }
 }
 
@@ -1138,4 +1315,53 @@
     .banner_content h1 {
         font-size: 28px;
     }
+    .who-we-are-after-banner {
+        padding: 70px 0px 30px;
+    }
+    .who-we-are-after-banner .about-img {
+        max-width: 210px;
+        max-height: 638px;
+    }
+    .who-we-are-banner {
+        height: 70vh;
+    }
+    .who-we-are-after-banner .about-company {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .who-we-are-history .section-title {
+        font-size: 25px;
+    }
+    .history-section-content {
+      
+        max-width: 100%;
+    }
+    .who-we-are-why-euro .feature-title {
+        font-size: 16px;
+    }
+    .how-we-do-title {
+        font-size: 18px;
+    }
+    .who-we-are-history .section-title {
+        font-size: 20px;
+    }
+    .img-div {
+       
+        margin-bottom: 40px !important;
+    }
+    .who-we-are-why-euro {
+        padding: 30px 0px;
+    }
+    .who-we-are-banner .big-planet {
+        width: 370px;
+        right: -41%;
+        top: 5%;
+        animation: rotatePlanet 60s linear infinite;
+    }
+    .who-we-are-banner .small-planet {
+        width: 190px;
+        left: -10%;
+        bottom: -12%;
+    }
+    
 }
