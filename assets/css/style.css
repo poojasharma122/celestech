@@ -2260,6 +2260,18 @@ textarea.form-control {
     background-color: #ffffff !important;
     /* color: #000000 !important; */
 }
+.light-mode .navbar-collapse {
+    background-color: white;
+   
+}
+.light-mode .navbar-nav .nav-link {
+    
+    color: black !important;
+}
+.light-mode .form-switch .form-check-input:checked {
+    background-color: #fff;
+    border-color: black;
+}
 
 /* Ensure text inside sections turns dark */
 /* .light-mode section h1,
