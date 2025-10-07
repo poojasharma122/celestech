@@ -1802,6 +1802,7 @@ textarea.form-control {
     resize: vertical;
 }
 
+/* Base button */
 .btn-send {
     background-color: #2e2e2e;
     color: #ccc;
@@ -1810,83 +1811,58 @@ textarea.form-control {
     padding: 10px 35px;
     display: block;
     margin: 0 auto;
-    transition: background-color 0.3s ease, color 0.3s ease;
     border: none;
     border-radius: 2px;
     position: relative;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+    overflow: hidden; /* Needed for inner span animation */
+    transition: color 0.3s ease;
 }
 
-/* Corner borders using pseudo-elements */
-.btn-send::before,
-.btn-send::after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-/* Top-left and bottom-right */
-.btn-send::before {
-    top: 0;
-    left: 0;
-    border-left-width: 1px;
-    border-top-width: 1px;
-}
-
-.btn-send::after {
-    bottom: 0;
-    right: 0;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-}
-
-/* Add more corners */
-.btn-send span::before,
-.btn-send span::after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.btn-send span::before {
-    top: -10px;
-    right: -35px;
-    border-right-width: 1px;
-    border-top-width: 1px;
-}
-
-.btn-send span::after {
-    bottom: -10px;
-    left: -35px;
-    border-left-width: 1px;
-    border-bottom-width: 1px;
-}
-
-/* Wrapper span for additional corners */
+/* Inner span wrapper */
 .btn-send span {
     position: relative;
     display: inline-block;
+    transition: transform 0.3s ease;
 }
 
+/* Inner hover effect */
+.btn-send:hover span {
+    transform: translateY(-2px); /* Slight upward slide */
+}
 
+/* Background overlay effect (like skoll button) */
+.btn-send::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ff5521; /* Hover color */
+    transition: left 0.3s ease;
+    z-index: 0;
+    
+}
+
+/* Move overlay on hover */
+.btn-send:hover::before {
+    left: 0;
+}
+
+/* Make text appear above overlay */
+.btn-send span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Optional: change text color on hover */
 .btn-send:hover {
-    background-color: #ff5521;
     color: #fff;
 }
+
 
 /* Icons with orange circles */
 .contact-info {
