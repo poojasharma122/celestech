@@ -772,34 +772,45 @@ body {
 
 
 
-/* General reset */
 
 /* =======================
    History Section Wrapper
    ======================= */
+/* History Section */
 .history-section {
-    background-image: url('../images/history-bag.png');
-    /* Replace with your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
-    z-index: 1;
+    overflow: hidden;
     padding: 80px 0;
-    overflow-x: hidden;
+    z-index: 1;
+    color: #fff;
 }
 
-/* Optional dark overlay (disabled here) */
-.history-section::before {
-    content: "";
+/* Background video styling */
+.history-section .background-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0, 0, 0.6); */
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Optional overlay for darkness effect */
+.history-section .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    /* Adjust for brightness */
     z-index: -1;
 }
+
+
+
+
 
 /* =======================
    Section Title & Desc
@@ -2551,16 +2562,19 @@ textarea.form-control {
     max-height: 638px;
     object-fit: cover;
 }
+
 .who-we-are-after-banner .about-company {
     font-size: 68px;
     font-weight: 600;
     margin-bottom: 27px;
     color: white;
 }
+
 .who-we-are-after-banner .about-inner-content {
     padding-left: 0;
     max-width: 662px;
 }
+
 .who-we-are-after-banner .about-text {
     color: white;
     font-size: 15px;
@@ -2568,29 +2582,35 @@ textarea.form-control {
     padding-bottom: 17px;
     text-transform: none;
 }
-.who-we-are-after-banner  {
+
+.who-we-are-after-banner {
     padding: 60px 20px 131px;
 }
+
 .who-we-are-history {
-    background-image: url('../images/wmremove-transformed2.png');
+    background: url('../images/v.mp4');
     padding: 190px 0 100px !important;
 }
+
 .who-we-are-history .section-title {
     font-size: 50px;
     font-weight: 400;
     margin-bottom: 20px;
     color: #fff;
 }
+
 .who-we-are-history .section-description {
     font-size: 15px;
     color: #ccc;
     margin-bottom: 90px;
     line-height: 1.6;
 }
-.who-we-are-history  .position-relative {
-   
+
+.who-we-are-history .position-relative {
+
     padding-left: 107px;
 }
+
 .who-we-are-history .overlay-box {
     background: rgba(0, 0, 0, 0.85);
     position: absolute;
@@ -2603,9 +2623,10 @@ textarea.form-control {
     max-width: 546px;
 }
 
-.who-we-are-why-euro{
+.who-we-are-why-euro {
     background: none;
 }
+
 .who-we-are-why-euro .feature-card {
     background-color: rgba(0, 0, 0, 0.85);
     padding: 30px 20px;
@@ -2616,12 +2637,14 @@ textarea.form-control {
     border: 1px solid #ffffff7a;
     text-align: start;
 }
+
 .who-we-are-why-euro .feature-title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+
 .who-we-are-why-euro .feature-icon img {
     width: 56px;
     height: 56px;
@@ -2629,3 +2652,36 @@ textarea.form-control {
 }
 
 
+.who-we-are-history {
+    position: relative;
+    padding: 190px 0 100px !important;
+    overflow: hidden;
+    color: #fff;
+}
+
+.who-we-are-history .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.who-we-are-history .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    /* Darkens video for text readability */
+    z-index: 1;
+}
+
+.who-we-are-history .History-main {
+    position: relative;
+    z-index: 2;
+    /* keeps content above video */
+}
