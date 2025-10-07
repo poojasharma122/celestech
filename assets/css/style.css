@@ -2311,7 +2311,12 @@ textarea.form-control {
 .light-mode .history-section .overlay-box p {
     color: #000;
 }
-
+.light-mode .history-section .section-title {
+    color: black;
+}
+.light-mode .history-section .section-description {
+    color: black;
+}
 
 .light-mode .target-audience>.container>div>h2,
 .light-mode .target-audience>.container>div>p {
@@ -2370,23 +2375,20 @@ textarea.form-control {
     border-color: #000;
 
 }
-
 .light-mode .btn-send {
-    background-color: #fff;
-    color: #000;
-
+    background-color: black;
+    color: white;
 }
 
-.light-mode .btn-send:hover {
-    background-color: #ff5521;
-    color: #fff;
-}
 
 
 .light-mode .contact-info .contact-text,
 .light-mode .contact-text strong {
     color: #000;
 
+}
+.light-mode .card3 {
+    margin-top: 0px;
 }
 
 
