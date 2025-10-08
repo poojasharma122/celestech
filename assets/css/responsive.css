@@ -1376,5 +1376,44 @@
         left: -10%;
         bottom: -7%;
     }
-    
+
+
+
+
+
+    .light-mode .solutions-section span {
+      
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .light-mode .solutions-section {
+        padding: 10px 0px 40px;
+        line-height: 1.5;
+    }
+    .light-mode .target-audience {
+        
+        padding-top: 30px !important;
+    }
+    .light-mode .target-description {
+       
+        margin: 0 auto 0px;
+    }
+    .light-mode .who-we-are-section .overlay-box {
+       
+        top: 30%;
+    }
+    .light-mode .history-section {
+        
+        padding-bottom: 0 !important;
+    }
+    .light-mode .what-we-do-section {
+        padding: 30px 0px 40px;
+    }
+    .light-mode .why-section {
+        padding: 35px 0px 50px;
+    }
+    .light-mode .history-section .overlay-box {
+     
+        padding-bottom: 10px !important;
+    }
 }
