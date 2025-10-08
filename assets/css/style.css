@@ -582,6 +582,16 @@ body {
     padding-left: 50px;
 }
 
+.about-video {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 723px;
+    height: 100%;
+    max-height: 638px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
 
 
 
@@ -1217,6 +1227,17 @@ body {
     transform: translateX(5px);
 }
 
+.who-we-are-section .left-video {
+    width: 100%;
+    height: 100%;
+    max-height: 725px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0;
+    /* optional */
+    display: block;
+}
+
 
 
 
@@ -1501,6 +1522,43 @@ body {
 }
 
 
+
+
+
+
+.how-we-do-section {
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* Background video */
+.how-we-do-section .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Optional dark overlay for contrast */
+.how-we-do-section .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Ensure content stays above video */
+.how-we-do-section .container {
+    position: relative;
+    z-index: 2;
+}
 
 
 
@@ -1817,7 +1875,8 @@ textarea.form-control {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    overflow: hidden; /* Needed for inner span animation */
+    overflow: hidden;
+    /* Needed for inner span animation */
     transition: color 0.3s ease;
 }
 
@@ -1830,7 +1889,8 @@ textarea.form-control {
 
 /* Inner hover effect */
 .btn-send:hover span {
-    transform: translateY(-2px); /* Slight upward slide */
+    transform: translateY(-2px);
+    /* Slight upward slide */
 }
 
 /* Background overlay effect (like skoll button) */
@@ -1841,10 +1901,11 @@ textarea.form-control {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #ff5521; /* Hover color */
+    background-color: #ff5521;
+    /* Hover color */
     transition: left 0.3s ease;
     z-index: 0;
-    
+
 }
 
 /* Move overlay on hover */
@@ -2260,18 +2321,49 @@ textarea.form-control {
     background-color: #ffffff !important;
     /* color: #000000 !important; */
 }
-.light-mode .navbar-collapse {
-    background-color: white;
-   
+
+.light-mode .solutions-section {
+    background-color: #f9f3ee !important;
 }
-.light-mode .navbar-nav .nav-link {
-    
-    color: black !important;
+
+.light-mode .solution-card {
+    background: white;
+
 }
-.light-mode .form-switch .form-check-input:checked {
-    background-color: #fff;
-    border-color: black;
+
+.light-mode .solution-title {
+
+    color: #181e27;
+
 }
+
+.light-mode .solution-text {
+
+    color: #181e27;
+
+}
+
+/* Default: dark mode (show white icons) */
+.icon-light {
+    display: none;
+}
+
+.icon-dark {
+    display: inline-block;
+}
+
+/* Light Mode Active */
+.light-mode .icon-light {
+    display: inline-block;
+}
+
+.light-mode .icon-dark {
+    display: none;
+}
+
+
+
+
 
 /* Ensure text inside sections turns dark */
 /* .light-mode section h1,
@@ -2314,7 +2406,7 @@ textarea.form-control {
 }
 
 .light-mode .history-section .overlay-box {
-    background: #fff;
+    background: #f4e0e0;
 
 
 }
@@ -2323,11 +2415,13 @@ textarea.form-control {
 .light-mode .history-section .overlay-box p {
     color: #000;
 }
+
 .light-mode .history-section .section-title {
-    color: black;
+    color: white;
 }
+
 .light-mode .history-section .section-description {
-    color: black;
+    color: white;
 }
 
 .light-mode .target-audience>.container>div>h2,
@@ -2353,10 +2447,7 @@ textarea.form-control {
     color: #000;
 }
 
-.light-mode .how-we-do-section h2,
-.light-mode .how-we-do-section p {
-    color: #000;
-}
+
 
 .light-mode .why-section h2 {
     color: #000;
@@ -2387,6 +2478,7 @@ textarea.form-control {
     border-color: #000;
 
 }
+
 .light-mode .btn-send {
     background-color: black;
     color: white;
@@ -2399,6 +2491,7 @@ textarea.form-control {
     color: #000;
 
 }
+
 .light-mode .card3 {
     margin-top: 0px;
 }
@@ -2412,15 +2505,9 @@ textarea.form-control {
     color: #000;
 }
 
-.light-mode .tab-content-wrapper {
 
-    background-color: black;
 
-}
 
-.light-mode .tab-content-wrapper div {
-    color: white;
-}
 
 .light-mode .product-icon {
     color: #c74418 !important;
@@ -2452,9 +2539,76 @@ textarea.form-control {
 
 
 
+.light-mode .btn-read {
+    border: 1px solid #181e27;
 
+    color: #181e27;
 
+}
 
+.light-mode .target-audience {
+    background-color: rgb(216 233 228) !important;
+}
+
+.light-mode .who-we-are-section {
+    background-color: rgb(217 220 237) !important;
+    color: #000;
+}
+
+.light-mode .who-we-are-section .section-title {
+    color: black;
+}
+
+.light-mode .who-we-are-section .section-description {
+    color: black;
+}
+
+.light-mode .what-we-do-section {
+    background-color: black !important;
+}
+
+.light-mode .how-we-do-section {
+    background-color: black !important;
+}
+
+.light-mode .contact-section {
+    background-color: #f9f3ee !important;
+}
+
+.light-mode .why-section {
+    background-color: rgb(244 224 224) !important;
+}
+
+.light-mode .card-body-custom h5 {
+
+    color: black;
+}
+
+.light-mode .card-body-custom p {
+
+    color: black;
+}
+
+.light-mode .card-body-custom {
+    background: #ffffff;
+    color: white;
+}
+
+.light-mode .about-section {
+    background-color: #e5e7eb !important;
+}
+
+.light-mode .what-we-do-title {
+    color: #fff !important;
+}
+
+.light-mode .what-we-do-subtitle {
+    color: #fff !important;
+}
+
+.light-mode .who-we-are-why-euro {
+    background-color: #6a675e !important;
+}
 
 
 

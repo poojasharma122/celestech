@@ -235,19 +235,22 @@
                 <div class="row align-items-center" data-aos="fade-up" data-aos-duration="2000">
                     <!-- Image Column -->
                     <div class="col-lg-6 mb-4 mb-lg-0">
-                        <img src="./assets/images/img-left.png" alt="About Company" class="about-img">
+                        <video class="about-video" autoplay muted loop playsinline>
+                            <source src="./assets/images/about-section-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <!-- Text Column -->
                     <div class="col-lg-6">
                         <div class="about-inner-content">
-                            <p class="about-title">About Our</p>
-                            <h2 class="about-company">COMPANY</h2>
-                            <p class="about-text">
+                            <p class="about-title" data-aos="fade-down-left">About Our</p>
+                            <h2 class="about-company" data-aos="fade-down-left">COMPANY</h2>
+                            <p class="about-text" data-aos="fade-down-left">
                                 In Barcelona we have assembled state-of-the-art manufacturing technology to address the
                                 lack
                                 of European production of safe solar eclipse glasses.
                             </p>
-                            <p class="about-text">
+                            <p class="about-text" data-aos="fade-down-left">
                                 With our experience and industrial capacity, Celestech can manufacture up to 350,000
                                 glasses
                                 per day, fully certified and ready for distribution.
@@ -270,8 +273,9 @@
 
         <section class="solutions-section overflow-class">
             <div class="container">
-                <span class="solutions-title solution-btn-read">Solutions</span>
-                <h5 class="solutions-subtitle">
+                <span class="solutions-title solution-btn-read" data-aos="fade-down"
+                    data-aos-duration="2000">Solutions</span>
+                <h5 class="solutions-subtitle" data-aos="fade-down" data-aos-duration="2000">
                     At Celestech, we offer our customers a production capacity that is unique in Europe:
                 </h5>
                 <div class="row g-4">
@@ -284,7 +288,11 @@
                                 <div class="col-12">
                                     <div class="solution-icon">
                                         <img src="./assets/images/certified.png" alt="Manufacture Certified"
-                                            class="img-fluid">
+                                            class="img-fluid icon-dark">
+
+                                        <!-- Light mode (black) icon -->
+                                        <img src="./assets/images/certified-black.png" alt="Manufacture Certified"
+                                            class="img-fluid icon-light">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -318,7 +326,10 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="solution-icon">
-                                        <img src="./assets/images/sketch.png" alt="Custom Sizes" class="img-fluid">
+                                        <img src="./assets/images/sketch.png" alt="Custom Sizes" class="img-fluid icon-dark">
+                                        <!-- Light mode (black) icon -->
+                                        <img src="./assets/images/sketch-blaxk.png" alt="Manufacture Certified"
+                                            class="img-fluid icon-light">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -352,7 +363,11 @@
                                 <div class="col-12">
                                     <div class="solution-icon">
                                         <img src="./assets/images/package.png" alt="Packaging Options"
-                                            class="img-fluid">
+                                            class="img-fluid icon-dark">
+
+                                        <!-- Light mode (black) icon -->
+                                        <img src="./assets/images/box-blaxk.png" alt="Manufacture Certified"
+                                            class="img-fluid icon-light">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -385,7 +400,11 @@
                                 <div class="col-12">
                                     <div class="solution-icon">
                                         <img src="./assets/images/save-the-world.png" alt="Environmental Commitment"
-                                            class="img-fluid">
+                                            class="img-fluid icon-dark">
+
+                                        <!-- Light mode (black) icon -->
+                                        <img src="./assets/images/nature-black.png" alt="Manufacture Certified"
+                                            class="img-fluid icon-light">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -434,8 +453,8 @@
 
 
         <section class="history-section py-5 overflow-class">
-             <!-- Background Video -->
-             <video autoplay muted loop playsinline class="background-video">
+            <!-- Background Video -->
+            <video autoplay muted loop playsinline class="background-video">
                 <source src="./assets/images/vv.mp4" type="video/mp4">
             </video>
 
@@ -447,8 +466,8 @@
                     <!-- Left Column -->
                     <div class="col-lg-1 col-12"></div>
                     <div class="col-lg-3 col-12 history-section-content">
-                        <h2 class="section-title">OUR HISTORY</h2>
-                        <p class="section-description">
+                        <h2 class="section-title" data-aos="fade-down" data-aos-duration="2000">OUR HISTORY</h2>
+                        <p class="section-description" data-aos="fade-down" data-aos-duration="2000">
                             Celestech began with a simple mission: to make solar observation safe and accessible for
                             everyone. Our team collaborated with astronomical institutions worldwide, ensuring millions
                             could experience the wonder of a solar eclipse without risk to their eyes.
@@ -528,7 +547,7 @@
 
 
 
-        
+
 
 
 
@@ -547,8 +566,8 @@
             <div class="container">
                 <!-- Heading -->
                 <div class="text-center mb-5">
-                    <h2 class="target-title">WHO IT’S FOR</h2>
-                    <p class="target-description">
+                    <h2 class="target-title" data-aos="fade-down" data-aos-duration="2000">WHO IT’S FOR</h2>
+                    <p class="target-description" data-aos="fade-down" data-aos-duration="2000">
                         At Celestech, we are driven by a passion for science, safety, and innovation. With roots in
                         North America and a strong presence in Europe, we specialize in the design and manufacture of
                         certified solar eclipse glasses and safe observation products. At Celestech, we are driven by a
@@ -661,7 +680,10 @@
                     <div class="col-lg-8 DeWatermark">
                         <div class="position-relative">
                             <!-- Background image -->
-                            <img src="./assets/images/left.png" class="img-fluid w-100 left-image" alt="Sunset Image" />
+                            <video autoplay muted loop playsinline class="w-100 left-video">
+                                <source src="./assets/images/who-we-are-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
 
                             <!-- Overlay content -->
                             <div class="overlay-box text-white" data-aos="fade-up">
@@ -697,10 +719,10 @@
 
 
 
-        <section class="what-we-do-section">
+        <section class="what-we-do-section overflow-class">
             <div class="container">
-                <h1 class="what-we-do-title">What We Do</h1>
-                <p class="what-we-do-subtitle">
+                <h1 class="what-we-do-title" data-aos="fade-down" data-aos-duration="2000">What We Do</h1>
+                <p class="what-we-do-subtitle" data-aos="fade-down" data-aos-duration="2000">
                     Comprehensive solar observation solutions, innovative products, and tailored services for every need
                 </p>
 
@@ -800,9 +822,17 @@
 
 
         <section class="how-we-do-section overflow-class">
-            <div class="container">
-                <h2 class="how-we-do-title">How We Do It</h2>
-                <p class="how-we-do-subtitle">
+            <!-- Background Video -->
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="./assets/images/how-we-do-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Dark Overlay (optional for readability) -->
+            <div class="video-overlay"></div>
+            <div class="container position-relative">
+                <h2 class="how-we-do-title" data-aos="fade-down" data-aos-duration="2000">How We Do It</h2>
+                <p class="how-we-do-subtitle" data-aos="fade-down" data-aos-duration="2000">
                     Comprehensive solar observation solutions, innovative products, and tailored services for every need
                 </p>
 
@@ -878,7 +908,7 @@
 
         <section class="why-section overflow-class">
             <div class="container">
-                <h2>Why It Matters</h2>
+                <h2 data-aos="fade-down" data-aos-duration="2000">Why It Matters</h2>
 
                 <div class="row g-4 justify-content-center" data-aos="zoom-in-down">
                     <!-- Card 1 -->
@@ -1052,7 +1082,7 @@
 
 
     <!-- Footer Section Begin -->
-    <footer class="footer-section">
+    <footer class="footer-section overflow-class">
         <div class="container">
             <div class="footer-text row">
 
@@ -1060,13 +1090,13 @@
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <div class="ft-about">
                         <div class="logo">
-                            <a href="#"></a>
+                            <a href="#" data-aos="fade-down" data-aos-duration="1000"></a>
                         </div>
-                        <p>
+                        <p data-aos="fade-down" data-aos-duration="2000">
                             With a production capacity of 350,000 glasses per day, Celestech provides SAFE solar vision
                             for millions.
                         </p>
-                        <div class="fa-social mt-3">
+                        <div class="fa-social mt-3" data-aos="fade-right" data-aos-duration="1000">
                             <a href="https://www.facebook.com/" target="_blank"><img src="./assets/images/fb.png"
                                     alt=""></a>
                             <a href="https://www.instagram.com/" target="_blank"><img src="./assets/images/insta.png"
@@ -1078,7 +1108,7 @@
 
                 <!-- Quick Links -->
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="ft-newslatter">
+                    <div class="ft-newslatter" data-aos="fade-left" data-aos-duration="1000">
                         <h6>Quick Links</h6>
                         <ul>
                             <li><a href="./">Home</a></li>
@@ -1091,7 +1121,7 @@
 
                 <!-- Customer Support -->
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="ft-newslatter">
+                    <div class="ft-newslatter" data-aos="fade-left" data-aos-duration="1000">
                         <h6>Customer Support</h6>
                         <ul>
                             <li><a href="./faq">FAQ</a></li>
@@ -1104,7 +1134,7 @@
 
                 <!-- Contact + Subscribe -->
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="ft-contact">
+                    <div class="ft-contact" data-aos="fade-left" data-aos-duration="1000">
                         <h6>Contact Us</h6>
                         <ul>
                             <li><strong>Email:</strong> <a href="mailto:info@celestech.com">info@celestech.com</a></li>
