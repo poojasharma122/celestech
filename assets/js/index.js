@@ -190,7 +190,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage = window.location.pathname.split("/").pop(); // e.g. "solutions.html"
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href").split("/").pop();
+    if (linkPage === currentPage || (currentPage === "" && linkPage === "./")) {
+      link.classList.add("active");
+    }
+  });
+});
 
 
 
